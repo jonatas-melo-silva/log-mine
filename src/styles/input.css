@@ -1,1 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kufam:ital,wght@0,400..900;1,400..900&display=swap');
+
 @import "tailwindcss";
+
+:root {
+  --brand-color: #269E6D;
+  --placeholder-color: #BAACAC;
+
+  --dark-10: #262626;
+  --dark-20: #414141;
+  --dark-30: #737373;
+  --white: #FFFFFF;
+
+  --gradient-color: #121212;
+
+  --font-inter: "Inter", sans-serif;
+  --font-kufam: "Kufam", sans-serif;
+}
+
+@theme inline {
+  --color-brand: var(--brand-color);
+  --color-placeholder: var(--placeholder-color);
+
+  --color-dark-10: var(--dark-10);
+  --color-dark-20: var(--dark-20);
+  --color-dark-30: var(--dark-30);
+  --color-white: var(--white);
+
+  --color-gradient: var(--gradient-color);
+
+  --font-kufam: var(--font-kufam);
+  --font-inter: var(--font-inter);
+
+  --default-font-family: var(--font-inter);
+}
