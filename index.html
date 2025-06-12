@@ -5,17 +5,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./src/styles/output.css">
+  <link rel="icon" href="./src/assets/logo-solo.webp" type="image/webp">
   <meta name="description"
-    content="  MINE é uma tela de login para um jogo fictício, com um design moderno e responsivo. A página inclui um formulário de login, links para outras seções do site e um rodapé com ícones representando diferentes modos de jogo.  ">
+    content="MINE é uma tela de login para um jogo fictício, com um design moderno e responsivo. A página inclui um formulário de login, links para outras seções do site e um rodapé com ícones representando diferentes modos de jogo.">
   <title>MINE | Login</title>
 </head>
 
-<body
-  class="min-h-lvh max-w-lvw font-poppins antialiased bg-[url('/public/image.png')] bg-cover bg-center bg-no-repeat text-white">
+<body class="min-h-lvh max-w-lvw font-poppins antialiased background-body bg-cover bg-center bg-no-repeat text-white">
   <div class="min-h-lvh max-w-lvw bg-gradient-to-b from-gradient via-gradient/40 to-gradient">
     <header class="container mx-auto flex items-center justify-between px-8 py-4 lg:py-10 lg:gap-12 lg:flex-col">
-      <a href="#"><img src="./src/assets/logo.svg" alt="Logo MINE" class="" /></a>
-      <i class="lg:hidden"><img src="./src/assets/menu-mobile.svg" alt=""></i>
+      <a href="#"><img class="w-[93.2px] h-12 lg:w-30 lg:h-15" src="./src/assets/logo.svg" alt="Logo MINE" /></a>
+      <i class="lg:hidden"><img class="w-8 h-8" src="./src/assets/menu-mobile.svg" alt="Menu Mobile"></i>
 
       <nav class="hidden lg:flex">
         <ul class="flex items-center justify-center text-base font-semibold font-kufam uppercase">
@@ -40,10 +40,9 @@
 
     <main class="container mx-auto flex flex-col items-center justify-center h-full px-6 py-24 sm:px-0 sm:py-20">
       <section
-        class="w-full max-w-[456px] flex flex-col items-center justify-center gap-12 sm:gap-16 px-6 sm:px-10 py-8 rounded-xl bg-dark-10/80 border-1 border-dark-30/50"
-        action="#" method="get">
-        <form class="w-full flex flex-col items-center justify-center gap-6">
-          <img class="w-8 h-10" src="./src/assets/logo-solo.svg" alt="Logo MINE" />
+        class="w-full max-w-[456px] flex flex-col items-center justify-center gap-12 sm:gap-16 px-6 sm:px-10 py-8 rounded-xl bg-dark-10/80 border-1 border-dark-30/50">
+        <form action="#" method="get" class="w-full flex flex-col items-center justify-center gap-6">
+          <img class="w-8.5 h-10.5" src="./src/assets/logo-solo.webp" alt="Logo MINE" />
 
           <div class="w-full flex flex-col items-center justify-center gap-12">
             <fieldset class="w-full flex flex-col items-start justify-center gap-6">
@@ -51,7 +50,7 @@
                 Email
                 <input
                   class="w-full px-4 py-3 rounded-sm border border-dark-20 bg-dark-10 text-white placeholder-placeholder focus:outline-none focus:ring-2 focus:ring-brand"
-                  placeholder="jonatas@email.com" type="email" id="email" name="email" required />
+                  autocomplete="email" placeholder="jonatas@email.com" type="email" id="email" name="email" required />
               </label>
 
               <div class="w-full flex flex-col gap-3">
@@ -59,12 +58,13 @@
                   Senha
                   <input
                     class="w-full px-4 py-3 rounded-sm border border-dark-20 bg-dark-10 text-white placeholder-placeholder focus:outline-none focus:ring-2 focus:ring-brand"
-                    placeholder="********" type="password" id="password" name="password" required />
+                    autocomplete="current-password" placeholder="Digite sua senha" type="password" id="password"
+                    name="password" required />
                 </label>
 
                 <label class="w-fit flex gap-2 text-xs font-inter" for="remember">
-                  <input class="focus:outline-none focus:ring-2 focus:ring-brand" type="checkbox" name="remember"
-                    id="remember">
+                  <input class="focus:outline-none focus:ring-2 focus:ring-brand" autocomplete="off" type="checkbox"
+                    name="remember" id="remember">
                   Lembrar minha senha
                 </label>
               </div>

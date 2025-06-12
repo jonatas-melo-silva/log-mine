@@ -33,3 +33,10 @@
 
   --default-font-family: var(--font-inter);
 }
+
+.background-body {
+  background: url('../../public/image.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
