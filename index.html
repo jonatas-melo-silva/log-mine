@@ -35,6 +35,51 @@
         </ul>
       </nav>
     </header>
+
+    <main class="container mx-auto flex flex-col items-center justify-center h-full px-6 py-24 sm:px-0 sm:py-20">
+      <section
+        class="w-full max-w-[456px] flex flex-col items-center justify-center gap-12 sm:gap-16 px-6 sm:px-10 py-8 rounded-xl bg-dark-10/80 border-1 border-dark-30/50"
+        action="#" method="get">
+        <form class="w-full flex flex-col items-center justify-center gap-6">
+          <img class="w-8 h-10" src="./src/assets/logo-solo.svg" alt="Logo MINE" />
+
+          <div class="w-full flex flex-col items-center justify-center gap-12">
+            <fieldset class="w-full flex flex-col items-start justify-center gap-6">
+              <label class="w-full flex flex-col gap-1 font-kufam font-medium text-sm" for="email">
+                Email
+                <input
+                  class="w-full px-4 py-3 rounded-sm border border-dark-20 bg-dark-10 text-white placeholder-placeholder focus:outline-none focus:ring-2 focus:ring-brand"
+                  placeholder="jonatas@email.com" type="email" id="email" name="email" required />
+              </label>
+
+              <div class="w-full flex flex-col gap-3">
+                <label class="w-full flex flex-col gap-1 font-kufam font-medium text-sm" for="password">
+                  Senha
+                  <input
+                    class="w-full px-4 py-3 rounded-sm border border-dark-20 bg-dark-10 text-white placeholder-placeholder focus:outline-none focus:ring-2 focus:ring-brand"
+                    placeholder="********" type="password" id="password" name="password" required />
+                </label>
+
+                <label class="w-fit flex gap-2 text-xs font-inter" for="remember">
+                  <input class="focus:outline-none focus:ring-2 focus:ring-brand" type="checkbox" name="remember"
+                    id="remember">
+                  Lembrar minha senha
+                </label>
+              </div>
+            </fieldset>
+
+            <button
+              class="w-full bg-brand text-white py-3 px-6 rounded-md font-semibold font-kufam shadow-2xs shadow-white hover:bg-brand/80 transition-colors duration-300 ease-in-out ring-white/10 focus:outline-none focus:ring-6 focus:ring-white/10"
+              type="submit">
+              Entrar na conta
+            </button>
+          </div>
+        </form>
+
+        <a class="text-brand font-medium text-xs sm:text-base text-center hover:underline transition-colors duration-300 ease-in-out"
+          href="#">Esqueceu a senha?</a>
+      </section>
+    </main>
   </div>
 </body>
 
